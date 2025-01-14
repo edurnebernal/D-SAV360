@@ -37,7 +37,7 @@ The following configuration variables must be defined in the `config.py` file:
 For each video, a separate folder is created in the output directory (cfg.out_frames_folder). Each frame image is named using the pattern: `<video_name>_<frame_id>.png`
 
 Folder structure:
-
+```
 frames/
 ├── video1/
 │   ├── video1_0001.png
@@ -47,6 +47,7 @@ frames/
 │   ├── video2_0001.png
 │   ├── video2_0002.png
 │   └── ...
+```
 
 ## Saliency Maps Computation (compute_gt_saliencymaps_DSAV360.py)
 This code is designed to generate saliency maps from eye-tracking data ([gaze data]())for the 360º videos. Saliency maps represent areas of visual attention, highlighting where users focus their gaze. The sript takes the fixation coordinates and outputs saliency maps as images, optionally saving fixation data in CSV format.
